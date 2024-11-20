@@ -29,12 +29,78 @@ const max=numero.sort((a,b)=> a - b);
 console.log(max)
 // exercice 16
 const n=[1,2,3,4]
+const res=[]
 for (let i= 0; i < n.length; i++) {
-    console.log(n[i*2])
+    res.push(n[i]*2)
+       
     
 }
+console.log(res)
+// exercice 17
+const car = {
+    model: 20,
+    Make: "toyota",
+    color: "red",
+    year: 2002,
+};
+
+let counter = 0;
+
+// Parcourir les propriétés de l'objet
+for (let key in car) {
+    console.log( key);
+    counter++;
+}
+
+console.log(`Total properties: ${counter}`);
 
 
 
 
+const etudaint={
+    name:"john",
+    age:20,
+    address:{
+        street:"street1",
+        city:"city1",
+        country:"country1",
+        },
 
+    
+}
+ let cont=0
+ for (const key in etudaint) {
+
+   console.log(key)
+
+   cont++
+ }
+ console.log("total keys "+cont)
+// exercice 18
+const personne={
+    name:"john",
+    age:20,
+    occupation:"hcgygdy"
+
+}
+for (const key in personne) {
+//    console.log(key+" : "+personne[key])
+   console.log(personne[key])
+}
+// exercice 19
+const tabl=[1,2,3,4,5]
+let i=0
+if (tabl.includes(3)) {
+    console.log("existe")
+    
+}else{
+    console.log("no")
+}
+// EX 20
+const per={
+    name:"nono",
+    age:20,
+}
+let per1={...per}
+per1.name="nouha"
+console.log(per.name)
