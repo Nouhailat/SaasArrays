@@ -103,4 +103,4 @@ const per={
 }
 let per1={...per}
 per1.name="nouha"
-console.log(per.name)
+console.log(per1.name)
